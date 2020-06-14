@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4edd7b2b79270d47cb85c686705683b6",
+    "revision": "493d3eb74fcb81101e5b9f49b4287f2c",
     "url": "/identifAI-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/identifAI-app/static/css/2.3c03f26f.chunk.css"
   },
   {
-    "revision": "3e01d8a95e849cb32e48",
+    "revision": "3e4183f5802270ce5ac0",
     "url": "/identifAI-app/static/css/main.a5f93440.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/identifAI-app/static/js/2.3688084b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3e01d8a95e849cb32e48",
-    "url": "/identifAI-app/static/js/main.ffccf581.chunk.js"
+    "revision": "3e4183f5802270ce5ac0",
+    "url": "/identifAI-app/static/js/main.f59ed3d8.chunk.js"
   },
   {
     "revision": "959164b541364dc1e68f",
