@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/identifAI-app/static/css/main.a5f93440.chunk.css",
+    "main.js": "/identifAI-app/static/js/main.ffccf581.chunk.js",
+    "main.js.map": "/identifAI-app/static/js/main.ffccf581.chunk.js.map",
+    "runtime-main.js": "/identifAI-app/static/js/runtime-main.ad3ec194.js",
+    "runtime-main.js.map": "/identifAI-app/static/js/runtime-main.ad3ec194.js.map",
+    "static/css/2.3c03f26f.chunk.css": "/identifAI-app/static/css/2.3c03f26f.chunk.css",
+    "static/js/2.3688084b.chunk.js": "/identifAI-app/static/js/2.3688084b.chunk.js",
+    "static/js/2.3688084b.chunk.js.map": "/identifAI-app/static/js/2.3688084b.chunk.js.map",
+    "index.html": "/identifAI-app/index.html",
+    "precache-manifest.01cdf652e6c3cb82570278da78a2d46f.js": "/identifAI-app/precache-manifest.01cdf652e6c3cb82570278da78a2d46f.js",
+    "service-worker.js": "/identifAI-app/service-worker.js",
+    "static/css/2.3c03f26f.chunk.css.map": "/identifAI-app/static/css/2.3c03f26f.chunk.css.map",
+    "static/css/main.a5f93440.chunk.css.map": "/identifAI-app/static/css/main.a5f93440.chunk.css.map",
+    "static/js/2.3688084b.chunk.js.LICENSE.txt": "/identifAI-app/static/js/2.3688084b.chunk.js.LICENSE.txt",
+    "static/media/image.png": "/identifAI-app/static/media/image.b37dc6e4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ad3ec194.js",
+    "static/css/2.3c03f26f.chunk.css",
+    "static/js/2.3688084b.chunk.js",
+    "static/css/main.a5f93440.chunk.css",
+    "static/js/main.ffccf581.chunk.js"
+  ]
+}
