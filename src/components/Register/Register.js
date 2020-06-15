@@ -6,7 +6,8 @@ class Register extends React.Component{
         this.state = {
             email : '',
             password: '',
-            name: ''
+            name: '',
+            displayText: ''
         }
     }
     onNameChange = (event) => {
@@ -37,6 +38,9 @@ class Register extends React.Component{
                 this.props.loadUser(user)
                 this.props.onRouteChange('home');
             }
+            else{
+                this.setState({displayText: user})
+            }
         })
     }
 
@@ -47,6 +51,7 @@ class Register extends React.Component{
                     <div className="measure">
                         <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
                             <legend className="f1 fw6 ph0 white mh0">Register</legend>
+                            <label className="lh-copy white f5" style = {{textTransform: "uppercase"}} >{this.state.displayText}</label>
                             <div className="mt3">
                                 <label className="db fw6 lh-copy white f6" htmlFor="name">Name</label>
                                 <input onChange = {this.onNameChange} className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="name"  id="name"/>

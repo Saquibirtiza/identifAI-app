@@ -57,22 +57,35 @@ class App extends Component{
     .then(console.log)
   }
 
+
   calculateFaceLocation = (data) => {
-    const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box;
+    // console.log(data)
+    var i;
+    let leftColBox = [];
+    let rightColBox = [];
+    let topRowBox = [];
+    let bottomRowBox = [];
     const image = document.getElementById('inputimage');
     const width = Number(image.width);
     const height = Number(image.height);
-    console.log(width,height);
+
+    for (i = 0; i < data.outputs[0].data.regions.length; i++) {
+      const clarifaiFace = data.outputs[0].data.regions[i].region_info.bounding_box;
+      leftColBox.push(clarifaiFace.left_col * width);
+      topRowBox.push(clarifaiFace.top_row * height);
+      rightColBox.push(width - (clarifaiFace.right_col * width));
+      bottomRowBox.push(height - (clarifaiFace.bottom_row * height));
+    }
     return {
-      leftCol: clarifaiFace.left_col * width,
-      topRow: clarifaiFace.top_row * height,
-      rightCol: width - (clarifaiFace.right_col * width),
-      bottomRow: height - (clarifaiFace.bottom_row * height)
+      leftCol: leftColBox,
+      topRow: topRowBox,
+      rightCol: rightColBox,
+      bottomRow: bottomRowBox
     }
   }
 
   displayFaceBox = (box) => {
-    console.log(box)
+    // console.log(box)
     this.setState({box: box});
   }
   
@@ -113,11 +126,15 @@ class App extends Component{
   onRouteChange = (route) => {
     if (route === 'signout'){
       this.setState(initialState)
+      this.setState({route: 'signin'});
     }
     else if (route === 'home'){
       this.setState({isSignedIn: true})
+      this.setState({route: route});
     }
-    this.setState({route: route});
+    else{
+      this.setState({route: route});
+    }
   }  
 
   render() {
@@ -128,7 +145,6 @@ class App extends Component{
         />
         <Navigation isSignedIn={this.state.isSignedIn} onRouteChange={this.onRouteChange}/>
         { this.state.route === 'home'
-          
           ? <div>
               <Rank name={this.state.user.name} entries={this.state.user.entries}/>
               <ImageLinkForm onInputChange={this.onInputChange} onButtonSubmit={this.onButtonSubmit}/>
