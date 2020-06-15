@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/identifAI-app/precache-manifest.35c80a9edd1d3341d2e6896a6053254e.js"
+  "/identifAI-app/precache-manifest.635b48bde4323c4ea9d894d2b962505d.js"
 );
 
 self.addEventListener('message', (event) => {
